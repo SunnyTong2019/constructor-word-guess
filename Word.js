@@ -1,7 +1,7 @@
 var Letter = require("./Letter");
 
 var Word = function (word) {
-    
+
     this.word = [];
 
     for (var i = 0; i < word.length; i++) {
@@ -14,7 +14,7 @@ var Word = function (word) {
 
         this.word.forEach(item => wordString += item.renderLetter() + " ");
 
-        console.log(wordString);
+        console.log("\n" + wordString + "\n");
     };
 
     this.checkWord = function (userGuessed) {
@@ -22,3 +22,5 @@ var Word = function (word) {
     };
 
 }
+
+module.exports = Word;

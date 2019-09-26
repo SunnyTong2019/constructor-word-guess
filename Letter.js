@@ -5,7 +5,7 @@ var Letter = function (letter) {
     this.guessed = false;
 
     this.renderLetter = function () {
-        if (this.guessed) { return this.letter; }
+        if (this.guessed) { return this.letter; } 
         else { return "_"; }
     };
 
@@ -14,7 +14,7 @@ var Letter = function (letter) {
             this.guessed = true;
         }
     };
-    
+
 }
 
 module.exports = Letter;
